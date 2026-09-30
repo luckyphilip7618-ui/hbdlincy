@@ -1,0 +1,1323 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Lincy ❤️</title>
+
+    <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+    <text y='.9em' font-size='90'>🌷</text>
+    </svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --black: #070607;
+            --black-soft: #0d090b;
+            --maroon-dark: #260b15;
+            --maroon: #4a1527;
+            --maroon-soft: #641d37;
+            --pink-dark: #8d3d5d;
+            --pink: #b76a86;
+            --pink-soft: #d79aae;
+            --cream: #ead9de;
+            --text: #e8dfe2;
+            --muted: #a99da2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 50% 0%, rgba(74, 21, 39, 0.35), transparent 35%),
+                var(--black);
+            color: var(--text);
+            font-family: "Montserrat", sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* =========================================
+           BACKGROUND
+        ========================================= */
+
+        #particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            bottom: -30px;
+            opacity: 0;
+            animation: floatUp linear forwards;
+            filter: blur(0.2px);
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.45;
+            }
+
+            80% {
+                opacity: 0.18;
+            }
+
+            100% {
+                transform:
+                    translateY(-115vh)
+                    translateX(var(--drift))
+                    rotate(30deg);
+                opacity: 0;
+            }
+        }
+
+        .stars {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            background-image:
+                radial-gradient(circle, rgba(215,154,174,.35) 1px, transparent 1px),
+                radial-gradient(circle, rgba(183,106,134,.22) 1px, transparent 1px);
+            background-size: 120px 120px, 190px 190px;
+            background-position: 10px 20px, 60px 90px;
+            opacity: .35;
+        }
+
+        section {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            padding: 100px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            width: min(900px, 100%);
+            text-align: center;
+        }
+
+        /* =========================================
+           TYPOGRAPHY
+        ========================================= */
+
+        .small-title {
+            color: var(--pink);
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        h1,
+        h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: clamp(55px, 11vw, 105px);
+            line-height: .92;
+            color: var(--cream);
+        }
+
+        h2 {
+            font-size: clamp(42px, 7vw, 70px);
+            color: var(--cream);
+            margin-bottom: 28px;
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 2;
+            font-weight: 300;
+        }
+
+        /* =========================================
+           WELCOME
+        ========================================= */
+
+        #welcome {
+            background:
+                radial-gradient(circle at center, rgba(74,21,39,.30), transparent 45%);
+        }
+
+        .welcome-flower {
+            font-size: 32px;
+            margin-bottom: 25px;
+            opacity: .8;
+            animation: gentleFloat 4s ease-in-out infinite;
+        }
+
+        @keyframes gentleFloat {
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-7px);
+            }
+        }
+
+        .welcome-text {
+            width: min(600px, 100%);
+            margin: 30px auto 38px;
+        }
+
+        .welcome-text p {
+            margin-bottom: 10px;
+        }
+
+        .button {
+            border: 1px solid rgba(183,106,134,.55);
+            background: rgba(74,21,39,.22);
+            color: var(--pink-soft);
+            padding: 15px 28px;
+            border-radius: 40px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: .4s ease;
+            box-shadow: 0 0 25px rgba(74,21,39,.18);
+        }
+
+        .button:hover {
+            background: rgba(74,21,39,.5);
+            border-color: var(--pink);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 35px rgba(74,21,39,.25);
+        }
+
+        /* =========================================
+           LETTER
+        ========================================= */
+
+        #letter {
+            background:
+                linear-gradient(
+                    to bottom,
+                    transparent,
+                    rgba(38,11,21,.25),
+                    transparent
+                );
+        }
+
+        .letter-paper {
+            position: relative;
+            width: min(700px, 100%);
+            margin: auto;
+            padding: 50px clamp(25px, 7vw, 70px);
+            border: 1px solid rgba(183,106,134,.18);
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(38,11,21,.40),
+                    rgba(13,9,11,.75)
+                );
+            box-shadow:
+                0 25px 80px rgba(0,0,0,.35),
+                inset 0 0 60px rgba(74,21,39,.08);
+            border-radius: 4px;
+        }
+
+        .letter-paper::before,
+        .letter-paper::after {
+            content: "✦";
+            position: absolute;
+            color: var(--pink-dark);
+            opacity: .45;
+            font-size: 18px;
+        }
+
+        .letter-paper::before {
+            top: 20px;
+            left: 25px;
+        }
+
+        .letter-paper::after {
+            bottom: 20px;
+            right: 25px;
+        }
+
+        .letter-heading {
+            font-family: "Great Vibes", cursive;
+            font-size: 38px;
+            color: var(--pink-soft);
+            margin-bottom: 28px;
+        }
+
+        .letter-paper p {
+            text-align: left;
+            margin-bottom: 22px;
+        }
+
+        .signature {
+            text-align: right;
+            font-family: "Great Vibes", cursive;
+            color: var(--pink-soft);
+            font-size: 29px;
+            margin-top: 35px;
+        }
+
+        /* =========================================
+           WISHES
+        ========================================= */
+
+        #wishes {
+            background:
+                radial-gradient(circle at 50% 50%, rgba(38,11,21,.30), transparent 55%);
+        }
+
+        .wish-intro {
+            max-width: 600px;
+            margin: -10px auto 45px;
+        }
+
+        .wish-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .wish-card {
+            min-height: 150px;
+            padding: 25px;
+            background: rgba(38,11,21,.20);
+            border: 1px solid rgba(183,106,134,.13);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            transition: .4s ease;
+        }
+
+        .wish-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(183,106,134,.35);
+            background: rgba(74,21,39,.18);
+        }
+
+        .wish-number {
+            font-family: "Cormorant Garamond", serif;
+            color: var(--pink);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .wish-card p {
+            font-family: "Cormorant Garamond", serif;
+            color: var(--cream);
+            font-size: 19px;
+            line-height: 1.45;
+        }
+
+        /* =========================================
+           SOMETHING TO SAY
+        ========================================= */
+
+        .quote {
+            font-family: "Great Vibes", cursive;
+            color: var(--pink);
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .personal-box {
+            max-width: 700px;
+            margin: auto;
+            padding: 45px clamp(25px, 6vw, 60px);
+            border-top: 1px solid rgba(183,106,134,.18);
+            border-bottom: 1px solid rgba(183,106,134,.18);
+        }
+
+        .personal-box p {
+            margin-bottom: 22px;
+        }
+
+        /* =========================================
+           SECRET
+        ========================================= */
+
+        #secret {
+            min-height: 90vh;
+        }
+
+        .envelope-area {
+            margin-top: 35px;
+        }
+
+        .envelope {
+            width: 190px;
+            height: 125px;
+            margin: auto;
+            position: relative;
+            cursor: pointer;
+            transition: .5s ease;
+            filter: drop-shadow(0 20px 25px rgba(0,0,0,.35));
+        }
+
+        .envelope:hover {
+            transform: translateY(-7px) scale(1.02);
+        }
+
+        .envelope-body {
+            position: absolute;
+            inset: 0;
+            background: #3a101f;
+            border: 1px solid rgba(215,154,174,.25);
+            border-radius: 3px;
+        }
+
+        .envelope-body::before,
+        .envelope-body::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .envelope-body::before {
+            left: 0;
+            border-width: 0 95px 75px 0;
+            border-color: transparent #53172c transparent transparent;
+        }
+
+        .envelope-body::after {
+            right: 0;
+            border-width: 75px 95px 0 0;
+            border-color: #4a1527 transparent transparent transparent;
+        }
+
+        .envelope-flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 95px solid transparent;
+            border-right: 95px solid transparent;
+            border-top: 72px solid #641d37;
+            transform-origin: top;
+            transition: .7s ease;
+            z-index: 4;
+        }
+
+        .envelope-heart {
+            position: absolute;
+            z-index: 5;
+            top: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 23px;
+            transition: .5s ease;
+        }
+
+        .envelope.open .envelope-flap {
+            transform: rotateX(180deg);
+        }
+
+        .envelope.open .envelope-heart {
+            opacity: 0;
+        }
+
+        .secret-message {
+            display: none;
+            max-width: 650px;
+            margin: 50px auto 0;
+            padding: 40px 30px;
+            border: 1px solid rgba(183,106,134,.18);
+            background: rgba(38,11,21,.25);
+            animation: reveal .9s ease forwards;
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .secret-message p {
+            margin-bottom: 20px;
+        }
+
+        .secret-highlight {
+            font-family: "Great Vibes", cursive;
+            color: var(--pink-soft);
+            font-size: 31px;
+        }
+
+        /* =========================================
+           FINAL
+        ========================================= */
+
+        #final {
+            min-height: 100vh;
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(74,21,39,.25),
+                    transparent 48%
+                );
+        }
+
+        .final-symbol {
+            font-size: 30px;
+            margin-bottom: 25px;
+            animation: gentleFloat 4s ease-in-out infinite;
+        }
+
+        .final-text {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .final-text p {
+            margin-bottom: 22px;
+        }
+
+        .final-line {
+            font-family: "Great Vibes", cursive;
+            color: var(--pink-soft);
+            font-size: 36px;
+            margin-top: 35px;
+        }
+
+        /* =========================================
+           BIRTHDAY ENDING
+        ========================================= */
+
+        #birthday {
+            min-height: 100vh;
+            text-align: center;
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(74,21,39,.38),
+                    transparent 55%
+                );
+        }
+
+        .birthday-number {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(100px, 25vw, 230px);
+            line-height: .7;
+            color: rgba(183,106,134,.10);
+            position: absolute;
+            z-index: -1;
+        }
+
+        .birthday-content {
+            position: relative;
+        }
+
+        .birthday-content h1 {
+            font-size: clamp(60px, 12vw, 120px);
+        }
+
+        .birthday-message {
+            max-width: 600px;
+            margin: 35px auto;
+        }
+
+        .birthday-signature {
+            font-family: "Great Vibes", cursive;
+            font-size: 35px;
+            color: var(--pink-soft);
+        }
+
+        /* =========================================
+           MUSIC
+        ========================================= */
+
+        .music-control {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 100;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            border: 1px solid rgba(183,106,134,.35);
+            background: rgba(13,9,11,.85);
+            backdrop-filter: blur(10px);
+            color: var(--pink-soft);
+            cursor: pointer;
+            font-size: 14px;
+            transition: .3s ease;
+        }
+
+        .music-control:hover {
+            border-color: var(--pink);
+            transform: scale(1.05);
+        }
+
+        /* =========================================
+           SCROLL REVEALS
+        ========================================= */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(35px);
+            transition:
+                opacity 1s ease,
+                transform 1s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 650px) {
+
+            section {
+                padding: 80px 18px;
+            }
+
+            .wish-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .wish-card {
+                min-height: 130px;
+            }
+
+            .letter-paper {
+                padding: 40px 24px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.9;
+            }
+
+            .music-control {
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div class="stars"></div>
+    <div id="particles"></div>
+
+
+    <!-- =========================================
+         ONE SONG FOR THE WHOLE WEBSITE
+    ========================================== -->
+
+    <audio id="birthdaySong" loop preload="auto">
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button
+        class="music-control"
+        id="musicButton"
+        onclick="toggleMusic()"
+        aria-label="Play or pause music">
+        ▶
+    </button>
+
+
+    <!-- =========================================
+         1. OPENING
+    ========================================== -->
+
+    <section id="welcome">
+
+        <div class="content reveal">
+
+            <div class="welcome-flower">
+                🌷
+            </div>
+
+            <div class="small-title">
+                September 30th • Made Especially For You
+            </div>
+
+            <h1>
+                Lincy...
+            </h1>
+
+            <div class="welcome-text">
+
+                <p>
+                    I made something for you.
+                </p>
+
+                <p>
+                    Nothing complicated.
+                    Just a little place filled with some words
+                    I wanted you to have today.
+                </p>
+
+                <p>
+                    Because turning 21 deserves a little something special.
+                </p>
+
+            </div>
+
+            <button
+                class="button"
+                onclick="enterWebsite()">
+                Open Your Birthday Surprise ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         2. BIRTHDAY LETTER
+    ========================================== -->
+
+    <section id="letter">
+
+        <div class="content reveal">
+
+            <div class="small-title">
+                A Few Words For You
+            </div>
+
+            <div class="letter-paper">
+
+                <div class="letter-heading">
+                    Happy 21st Birthday, Lincy ❤️
+                </div>
+
+                <p>
+                    I could have just sent you a normal birthday message,
+                    but I wanted to do something a little more special this time.
+                </p>
+
+                <p>
+                    So I made this little place instead.
+                </p>
+
+                <p>
+                    I hope 21 brings you happiness, beautiful memories,
+                    exciting opportunities, and so many moments that make
+                    you genuinely smile.
+                </p>
+
+                <p>
+                    I hope you get to experience things you've been waiting for,
+                    discover new things about yourself,
+                    and have people around you who make life feel a little lighter.
+                </p>
+
+                <p>
+                    Most of all, I hope this new chapter is kind to you.
+                </p>
+
+                <p>
+                    You deserve a really good year, Lincy.
+                    And I hope this one gives you plenty of reasons
+                    to look back and smile.
+                </p>
+
+                <div class="signature">
+                    Happy 21st, Lincy 🌷
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         3. A FEW WISHES
+    ========================================== -->
+
+    <section id="wishes">
+
+        <div class="content reveal">
+
+            <div class="small-title">
+                A Few Things I Wish For You
+            </div>
+
+            <h2>
+                For Your 21st ✨
+            </h2>
+
+            <div class="wish-intro">
+
+                <p>
+                    Just a few little wishes for this new chapter of yours.
+                </p>
+
+            </div>
+
+            <div class="wish-grid">
+
+                <div class="wish-card">
+                    <div class="wish-number">01</div>
+                    <p>
+                        I hope you find more reasons to smile
+                        than you can count.
+                    </p>
+                </div>
+
+                <div class="wish-card">
+                    <div class="wish-number">02</div>
+                    <p>
+                        I hope you have peaceful moments
+                        where everything simply feels okay.
+                    </p>
+                </div>
+
+                <div class="wish-card">
+                    <div class="wish-number">03</div>
+                    <p>
+                        I hope this year opens doors
+                        you've been waiting for.
+                    </p>
+                </div>
+
+                <div class="wish-card">
+                    <div class="wish-number">04</div>
+                    <p>
+                        I hope you always have people around you
+                        who genuinely appreciate you.
+                    </p>
+                </div>
+
+                <div class="wish-card">
+                    <div class="wish-number">05</div>
+                    <p>
+                        And I hope 21 becomes a chapter
+                        you'll always remember fondly.
+                    </p>
+                </div>
+
+                <div class="wish-card">
+                    <div class="wish-number">06</div>
+                    <p>
+                        I hope you never forget just how much
+                        you can accomplish.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         4. SOMETHING I WANTED TO SAY
+    ========================================== -->
+
+    <section id="personal">
+
+        <div class="content reveal">
+
+            <div class="small-title">
+                Something I Wanted To Say
+            </div>
+
+            <div class="quote">
+                Maybe I've never said it properly...
+            </div>
+
+            <div class="personal-box">
+
+                <p>
+                    I don't know if you realize it,
+                    but you're someone I've come to care about quite a lot.
+                </p>
+
+                <p>
+                    There's just something about you
+                    that makes you really easy to appreciate.
+                </p>
+
+                <p>
+                    I like talking to you.
+                    I like seeing you happy.
+                    And honestly, getting to know you
+                    has been one of those unexpected little things
+                    I've really enjoyed.
+                </p>
+
+                <p>
+                    I didn't make this to make your birthday complicated
+                    or put you on the spot.
+                </p>
+
+                <p>
+                    I just wanted you to know that you're special to me.
+                </p>
+
+                <p>
+                    And maybe someday I'll find the right words
+                    to explain exactly why.
+                </p>
+
+                <div class="signature">
+                    Until then... ❤️
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         5. SECRET SURPRISE
+    ========================================== -->
+
+    <section id="secret">
+
+        <div class="content reveal">
+
+            <div class="small-title">
+                Something I Hid For You
+            </div>
+
+            <h2>
+                One Little Secret 🔐
+            </h2>
+
+            <p>
+                I couldn't let you leave without hiding
+                one more thing somewhere in here.
+            </p>
+
+            <div class="envelope-area">
+
+                <div
+                    class="envelope"
+                    id="envelope"
+                    onclick="openSecret()">
+
+                    <div class="envelope-body"></div>
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="envelope-heart">
+                        ❤️
+                    </div>
+
+                </div>
+
+                <p style="margin-top:20px;">
+                    Tap the envelope...
+                </p>
+
+            </div>
+
+
+            <div
+                class="secret-message"
+                id="secretMessage">
+
+                <div class="secret-highlight">
+                    Okay... here's the secret.
+                </div>
+
+                <p>
+                    I may have a little more than a normal
+                    birthday wish for you.
+                </p>
+
+                <p>
+                    Somewhere along the way,
+                    you became someone I genuinely look forward to talking to,
+                    someone whose happiness matters to me,
+                    and someone I can't help but smile about sometimes.
+                </p>
+
+                <p>
+                    So yes...
+                </p>
+
+                <p class="secret-highlight">
+                    I have a pretty big crush on you. ❤️
+                </p>
+
+                <p>
+                    No pressure.
+                    No expectations.
+                    I just wanted you to know.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         6. FINAL MESSAGE
+    ========================================== -->
+
+    <section id="final">
+
+        <div class="content reveal">
+
+            <div class="final-symbol">
+                🌙
+            </div>
+
+            <div class="small-title">
+                One Last Thing
+            </div>
+
+            <h2>
+                Before You Go...
+            </h2>
+
+            <div class="final-text">
+
+                <p>
+                    I hope somewhere between these words
+                    and this little website,
+                    you managed to smile.
+                </p>
+
+                <p>
+                    I know this isn't the biggest gift in the world.
+                    It's just a small thing I put together
+                    because I wanted your birthday
+                    to have something that was made especially for you.
+                </p>
+
+                <p>
+                    Thank you for being the person you are.
+                    Thank you for the conversations,
+                    the laughs,
+                    and the little moments
+                    that probably mean more to me than you realize.
+                </p>
+
+                <p>
+                    Whatever this year brings,
+                    I genuinely hope it's good to you.
+                </p>
+
+                <div class="final-line">
+                    You deserve beautiful things, Lincy. ❤️
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         7. FINAL BIRTHDAY SCREEN
+    ========================================== -->
+
+    <section id="birthday">
+
+        <div class="birthday-number">
+            21
+        </div>
+
+        <div class="content birthday-content reveal">
+
+            <div class="small-title">
+                September 30th
+            </div>
+
+            <h1>
+                Happy<br>
+                21st Birthday
+            </h1>
+
+            <div class="birthday-message">
+
+                <p>
+                    Lincy, I hope today is filled with
+                    laughter, good people, beautiful moments,
+                    and memories you'll want to keep.
+                </p>
+
+                <p>
+                    Enjoy your day.
+                    Celebrate yourself.
+                    And don't forget to smile.
+                </p>
+
+            </div>
+
+            <div class="birthday-signature">
+                Happy Birthday, Lincy 🌷
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        /* =========================================
+           MUSIC
+        ========================================== */
+
+        const song = document.getElementById("birthdaySong");
+        const musicButton = document.getElementById("musicButton");
+
+        function playMusic() {
+
+            song.volume = 0.45;
+
+            song.play()
+                .then(() => {
+                    musicButton.innerHTML = "❚❚";
+                })
+                .catch(() => {
+                    musicButton.innerHTML = "▶";
+                });
+        }
+
+
+        function enterWebsite() {
+
+            /*
+             * Browsers allow music after the user
+             * interacts with the page.
+             */
+
+            playMusic();
+
+            document
+                .getElementById("letter")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+        }
+
+
+        function toggleMusic() {
+
+            if (song.paused) {
+
+                song.play()
+                    .then(() => {
+                        musicButton.innerHTML = "❚❚";
+                    });
+
+            } else {
+
+                song.pause();
+
+                musicButton.innerHTML = "▶";
+            }
+        }
+
+
+        /* =========================================
+           SECRET ENVELOPE
+        ========================================== */
+
+        let secretOpened = false;
+
+        function openSecret() {
+
+            const envelope =
+                document.getElementById("envelope");
+
+            const secret =
+                document.getElementById("secretMessage");
+
+            if (secretOpened) return;
+
+            secretOpened = true;
+
+            envelope.classList.add("open");
+
+            setTimeout(() => {
+
+                secret.style.display = "block";
+
+                setTimeout(() => {
+
+                    secret.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+
+                }, 200);
+
+            }, 650);
+        }
+
+
+        /* =========================================
+           FLOATING PARTICLES
+        ========================================== */
+
+        const particleContainer =
+            document.getElementById("particles");
+
+        const symbols = [
+            "♡",
+            "♥",
+            "✦",
+            "✧",
+            "·",
+            "🌸"
+        ];
+
+
+        function createParticle() {
+
+            const particle =
+                document.createElement("div");
+
+            particle.className = "particle";
+
+            particle.innerHTML =
+                symbols[
+                    Math.floor(
+                        Math.random() * symbols.length
+                    )
+                ];
+
+            particle.style.left =
+                Math.random() * 100 + "%";
+
+            particle.style.fontSize =
+                (9 + Math.random() * 14) + "px";
+
+            particle.style.color =
+                Math.random() > .5
+                    ? "#8d3d5d"
+                    : "#b76a86";
+
+            particle.style.setProperty(
+                "--drift",
+                (-60 + Math.random() * 120) + "px"
+            );
+
+            const duration =
+                9 + Math.random() * 9;
+
+            particle.style.animationDuration =
+                duration + "s";
+
+            particleContainer.appendChild(particle);
+
+            setTimeout(() => {
+                particle.remove();
+            }, duration * 1000);
+        }
+
+
+        setInterval(createParticle, 900);
+
+
+        /* =========================================
+           SCROLL REVEAL
+        ========================================== */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        revealElements.forEach(element => {
+            observer.observe(element);
+        });
+
+
+        /* =========================================
+           INITIAL WELCOME ANIMATION
+        ========================================== */
+
+        window.addEventListener("load", () => {
+
+            document
+                .querySelector("#welcome .reveal")
+                .classList.add("visible");
+
+        });
+
+    </script>
+
+</body>
+</html>
+```
